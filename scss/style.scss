@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1D1D1D;
+}
+
+.vertical-nav {
+    position: fixed;
+    background-color: #131313;
+    height: 100%;
+    width: 50px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
