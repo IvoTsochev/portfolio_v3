@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
 }
 
 body {
@@ -20,4 +21,43 @@ main {
     top: 50%;
     left: 100px;
     transform: translateY(-50%);
+    .small-txt { 
+        p {
+        /* Junior Front End Developer / Wordpress expert / Freelancer */
+        width: 589px;
+        height: 24px;
+        left: 158px;
+        top: 692px;    
+        font-family: Russo One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 23px;
+        color: #3C3C3C;
+    }
+    }
+    button {
+        /* contact me button */
+        width: 284px;
+        height: 57px;
+        left: 158px;
+        top: 736px;    
+        border: 2px solid #FF8214;
+        box-sizing: border-box;
+        background-color: transparent;
+        margin-top: 20px;
+        a {
+            /* CONTACT ME */
+            width: 196px;
+            height: 32px;
+            left: 202px;
+            top: 749px;
+            font-family: Russo One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 36px;
+            color: #FF8214;
+        }
+    }
 }
