@@ -14,6 +14,25 @@ body {
     background-color: #131313;
     height: 100%;
     width: 50px;
+    .inner-nav {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        svg {
+            margin-bottom: 30px;
+        }
+    }
+    .social-nav {
+        position: absolute;
+        bottom: 43px;
+        left: 50%;
+        transform: translateX(-50%);
+        svg {
+            margin-bottom: 17px;
+        }
+    }
 }
 
 main {
@@ -48,16 +67,24 @@ main {
         margin-top: 20px;
         a {
             /* CONTACT ME */
-            width: 196px;
-            height: 32px;
-            left: 202px;
-            top: 749px;
+            // max-width: 196px;
+            // max-height: 32px;
+            // left: 202px;
+            // top: 749px;
             font-family: Russo One;
             font-style: normal;
             font-weight: normal;
             font-size: 30px;
             line-height: 36px;
             color: #FF8214;
+            text-decoration: none;
         }
     }
+
+}
+.blog-corner {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
 }

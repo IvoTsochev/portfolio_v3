@@ -17,6 +17,30 @@ body {
   width: 50px;
 }
 
+.vertical-nav .inner-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.vertical-nav .inner-nav svg {
+  margin-bottom: 30px;
+}
+
+.vertical-nav .social-nav {
+  position: absolute;
+  bottom: 43px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.vertical-nav .social-nav svg {
+  margin-bottom: 17px;
+}
+
 main {
   position: absolute;
   top: 50%;
@@ -54,15 +78,19 @@ main button {
 
 main button a {
   /* CONTACT ME */
-  width: 196px;
-  height: 32px;
-  left: 202px;
-  top: 749px;
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 36px;
   color: #FF8214;
+  text-decoration: none;
+}
+
+.blog-corner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
