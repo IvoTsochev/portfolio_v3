@@ -49,6 +49,10 @@ main {
           transform: translateY(-50%);
 }
 
+main .big-txt .about-me-heading {
+  margin-bottom: 1rem;
+}
+
 main .small-txt p {
   /* Junior Front End Developer / Wordpress expert / Freelancer */
   width: 589px;
@@ -61,6 +65,14 @@ main .small-txt p {
   font-size: 19px;
   line-height: 23px;
   color: #3C3C3C;
+}
+
+main .small-txt .about-txt {
+  margin-bottom: 1rem;
+}
+
+main .small-txt .timeline-label {
+  margin-bottom: 1rem;
 }
 
 main button {
@@ -77,7 +89,6 @@ main button {
 }
 
 main button a {
-  /* CONTACT ME */
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;

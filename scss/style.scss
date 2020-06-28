@@ -35,11 +35,17 @@ body {
     }
 }
 
+
 main {
     position: absolute;
     top: 50%;
     left: 100px;
     transform: translateY(-50%);
+    .big-txt {
+        .about-me-heading {
+            margin-bottom: 1rem;
+        }        
+    }
     .small-txt { 
         p {
         /* Junior Front End Developer / Wordpress expert / Freelancer */
@@ -53,6 +59,12 @@ main {
         font-size: 19px;
         line-height: 23px;
         color: #3C3C3C;
+    }
+    .about-txt {
+        margin-bottom: 1rem;
+    }
+    .timeline-label {
+        margin-bottom: 1rem;
     }
     }
     button {
