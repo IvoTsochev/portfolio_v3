@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
 }
 
 .vertical-nav {
@@ -64,7 +64,8 @@ main .small-txt p {
   font-weight: normal;
   font-size: 19px;
   line-height: 23px;
-  color: #3C3C3C;
+  color: #3c3c3c;
+  margin-left: 20px;
 }
 
 main .small-txt .about-txt {
@@ -77,24 +78,25 @@ main .small-txt .timeline-label {
 
 main button {
   /* contact me button */
-  width: 284px;
+  width: 200px;
   height: 57px;
   left: 158px;
   top: 736px;
-  border: 2px solid #FF8214;
+  border: 2px solid #ff8214;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: transparent;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 main button a {
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 36px;
-  color: #FF8214;
+  color: #ff8214;
   text-decoration: none;
 }
 
