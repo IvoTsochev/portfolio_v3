@@ -9,6 +9,7 @@ body {
 	background-color: #1d1d1d;
 }
 
+// NAVIGATION
 .vertical-nav {
 	position: fixed;
 	background-color: #131313;
@@ -34,20 +35,28 @@ body {
 		}
 	}
 }
+// END NAVIGATION
 
 main {
-	position: absolute;
-	top: 50%;
-	left: 100px;
-	transform: translateY(-50%);
-	.big-txt {
-		.about-me-heading {
-			margin-bottom: 1rem;
-		}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	padding-left: 7rem;
+	.h-big-txt {
 	}
-	.small-txt {
+	.a-big-txt {
+		width: 388px;
+		height: 96px;
+		font-family: Russo One;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		line-height: 96px;
+		color: #ff8214;
+	}
+	.h-small-txt {
 		p {
-			/* Junior Front End Developer / Wordpress expert / Freelancer */
 			width: 589px;
 			height: 24px;
 			left: 158px;
@@ -58,35 +67,37 @@ main {
 			font-size: 19px;
 			line-height: 23px;
 			color: #3c3c3c;
-			margin-left: 20px;
-		}
-		.about-txt {
-			margin-bottom: 1rem;
-		}
-		.timeline-label {
-			margin-bottom: 1rem;
 		}
 	}
-	button {
-		/* contact me button */
+	.a-small-txt {
+		margin-bottom: 3rem;
+		p {
+			width: 645px;
+			max-height: 288px;
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 19px;
+			color: #ffffff;
+		}
+	}
+	.h-btn {
 		width: 200px;
 		height: 57px;
+		padding: 1rem 2rem;
 		left: 158px;
 		top: 736px;
 		border: 2px solid #ff8214;
 		box-sizing: border-box;
 		background-color: transparent;
-		margin-top: 20px;
-		margin-left: 20px;
-		a {
-			font-family: Russo One;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 20px;
-			line-height: 36px;
-			color: #ff8214;
-			text-decoration: none;
-		}
+		margin-top: 50px;
+		font-family: Russo One;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: #ff8214;
+		text-decoration: none;
 	}
 }
 .blog-corner {
