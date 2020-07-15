@@ -67,6 +67,17 @@ main .a-big-txt {
   color: #ff8214;
 }
 
+main .s-big-txt {
+  width: 1091px;
+  height: 88px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 96px;
+  color: #ff8214;
+}
+
 main .h-small-txt p {
   width: 589px;
   height: 24px;
@@ -80,17 +91,21 @@ main .h-small-txt p {
   color: #3c3c3c;
 }
 
-main .a-small-txt {
+main .a-small-txt,
+main .s-small-txt,
+main .c-small-txt {
   margin-bottom: 3rem;
 }
 
-main .a-small-txt p {
+main .a-small-txt p,
+main .s-small-txt p,
+main .c-small-txt p {
   width: 645px;
   max-height: 288px;
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   color: #ffffff;
 }
@@ -119,5 +134,185 @@ main .h-btn {
   top: 0px;
   right: 0px;
   cursor: pointer;
+}
+
+#my-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#my-work .left-work {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+#my-work .left-work .m-big-txt {
+  width: 356px;
+  height: 96px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 96px;
+  color: #ff8214;
+}
+
+#my-work .left-work .m-small-txt ul {
+  list-style-type: none;
+}
+
+#my-work .left-work .m-small-txt ul li a {
+  text-decoration: none;
+  color: #3c3c3c;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  font-size: 1.5rem;
+}
+
+#my-work .left-work .m-small-txt ul li a:hover {
+  color: #ff8214;
+  font-size: 1.7rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#my-work .right-work {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border: #3c3c3c solid 1px;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .left-contact {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+#contact .left-contact .c-big-txt {
+  max-width: 1091px;
+  height: 88px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 96px;
+  color: #ff8214;
+}
+
+#contact .left-contact .c-small-txt {
+  margin-bottom: 3rem;
+}
+
+#contact .left-contact .c-small-txt p {
+  max-width: 500px;
+  max-height: 288px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+#contact .left-contact #contact-form input, #contact .left-contact #contact-form textarea {
+  background-color: #3c3c3c;
+  border-radius: 5px;
+  border: none;
+}
+
+#contact .left-contact #contact-form input::-webkit-input-placeholder, #contact .left-contact #contact-form textarea::-webkit-input-placeholder {
+  padding-left: 1rem;
+}
+
+#contact .left-contact #contact-form input:-ms-input-placeholder, #contact .left-contact #contact-form textarea:-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+#contact .left-contact #contact-form input::-ms-input-placeholder, #contact .left-contact #contact-form textarea::-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+#contact .left-contact #contact-form input::placeholder, #contact .left-contact #contact-form textarea::placeholder {
+  padding-left: 1rem;
+}
+
+#contact .left-contact #contact-form input {
+  height: 50px;
+}
+
+#contact .left-contact #contact-form #fname {
+  width: 240px;
+  margin-bottom: 1rem;
+}
+
+#contact .left-contact #contact-form #email {
+  width: 240px;
+}
+
+#contact .left-contact #contact-form #subject {
+  width: 486px;
+  margin-bottom: 1rem;
+}
+
+#contact .left-contact #contact-form #textarea {
+  width: 486px;
+}
+
+#contact .left-contact #contact-form #textarea::-webkit-input-placeholder {
+  padding-top: 1rem;
+}
+
+#contact .left-contact #contact-form #textarea:-ms-input-placeholder {
+  padding-top: 1rem;
+}
+
+#contact .left-contact #contact-form #textarea::-ms-input-placeholder {
+  padding-top: 1rem;
+}
+
+#contact .left-contact #contact-form #textarea::placeholder {
+  padding-top: 1rem;
+}
+
+#contact .right-contact {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border-left: 1px solid #3c3c3c;
+  height: 100%;
+}
+
+#contact .right-contact iframe {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -43,8 +44,6 @@ main {
 	justify-content: center;
 	height: 100vh;
 	padding-left: 7rem;
-	.h-big-txt {
-	}
 	.a-big-txt {
 		width: 388px;
 		height: 96px;
@@ -55,6 +54,18 @@ main {
 		line-height: 96px;
 		color: #ff8214;
 	}
+	.s-big-txt {
+		width: 1091px;
+		height: 88px;
+		font-family: Russo One;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		line-height: 96px;
+		color: #ff8214;
+	}
+	
+
 	.h-small-txt {
 		p {
 			width: 589px;
@@ -69,7 +80,9 @@ main {
 			color: #3c3c3c;
 		}
 	}
-	.a-small-txt {
+	.a-small-txt,
+	.s-small-txt,
+	.c-small-txt {
 		margin-bottom: 3rem;
 		p {
 			width: 645px;
@@ -77,11 +90,12 @@ main {
 			font-family: Russo One;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 19px;
 			color: #ffffff;
 		}
 	}
+
 	.h-btn {
 		width: 200px;
 		height: 57px;
@@ -105,4 +119,127 @@ main {
 	top: 0px;
 	right: 0px;
 	cursor: pointer;
+}
+
+// MY WORK PAGE
+
+#my-work {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	.left-work {
+		flex: 50%;
+		.m-big-txt {
+			width: 356px;
+			height: 96px;
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 50px;
+			line-height: 96px;
+			color: #ff8214;
+		}
+		.m-small-txt {
+			ul {
+				list-style-type: none;
+				li {
+					&:hover {
+					}
+					a {
+						text-decoration: none;
+						color: #3c3c3c;
+						transition: all .3s ease;
+						font-size: 1.5rem;
+						&:hover {
+							color: #ff8214;
+							font-size: 1.7rem;
+							transition: all .3s ease;
+						}
+					}
+				}
+			}
+		}
+	}
+	.right-work {
+		flex: 50%;
+		border: #3c3c3c solid 1px;
+		height: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		transition-duration: 500ms;
+	}
+}
+
+// CONTACT PAGE
+
+#contact {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	.left-contact {
+		flex: 50%;
+		.c-big-txt {
+			max-width: 1091px;
+			height: 88px;
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 50px;
+			line-height: 96px;
+			color: #ff8214;
+		}
+		.c-small-txt {
+			margin-bottom: 3rem;
+			p {
+				max-width: 500px;
+				max-height: 288px;
+				font-family: Russo One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 19px;
+				color: #ffffff;
+				margin-bottom: 3rem;
+			}
+		}
+		#contact-form {
+			input,textarea {
+				background-color: #3c3c3c;
+				border-radius: 5px;
+				border: none;
+				&::placeholder {
+					padding-left: 1rem;
+				}
+			}
+			input {
+				height: 50px;
+			}
+			#fname {
+				width: 240px;
+				margin-bottom: 1rem;
+			}
+			#email {
+				width: 240px;
+			}
+			#subject {
+				width: 486px;
+				margin-bottom: 1rem;
+			}
+			#textarea {
+				width: 486px;
+				&::placeholder {
+					padding-top: 1rem;
+				}
+			}
+		}
+	}
+	.right-contact {
+		flex: 50%;
+		border-left: 1px solid #3c3c3c;
+		height: 100%;
+		iframe {
+			width: 100%;
+		}
+	}
 }
