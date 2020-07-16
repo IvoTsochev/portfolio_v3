@@ -7,6 +7,24 @@
 
 body {
 	background-color: #1d1d1d;
+	overflow: hidden;
+}
+
+// SWUP ANIMATION
+.transition-fade {
+	opacity: 1;
+	transition: 500ms;
+	// transform: translateX(0);
+	// transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+	opacity: 1;
+	transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+	opacity: 0;
 }
 
 // NAVIGATION
@@ -70,7 +88,7 @@ main {
 }
 
 // HOMEPAGE
-#homepage {
+.homepage {
 	.h-small-txt {
 		p {
 			width: 589px;
@@ -105,7 +123,7 @@ main {
 }
 
 // ABOUT ME
-#about {
+.about {
 	.a-small-txt {
 		margin-bottom: 3rem;
 		p {
@@ -122,7 +140,7 @@ main {
 }
 
 // SKILLS
-#skills {
+.skills {
 	.s-big-txt {
 		width: 1091px;
 		height: 88px;
@@ -150,7 +168,7 @@ main {
 
 // MY WORK PAGE
 
-#my-work {
+.my-work {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -200,7 +218,7 @@ main {
 
 // CONTACT PAGE
 
-#contact {
+.contact {
 	display: flex;
 	flex-direction: row;
 	align-items: center;

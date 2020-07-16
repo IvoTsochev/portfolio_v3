@@ -8,6 +8,23 @@
 
 body {
   background-color: #1d1d1d;
+  overflow: hidden;
+}
+
+.transition-fade {
+  opacity: 1;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+  opacity: 1;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
 }
 
 .vertical-nav {
@@ -84,7 +101,7 @@ main .a-big-txt {
   cursor: pointer;
 }
 
-#homepage .h-small-txt p {
+.homepage .h-small-txt p {
   width: 589px;
   height: 24px;
   left: 158px;
@@ -97,7 +114,7 @@ main .a-big-txt {
   color: #3c3c3c;
 }
 
-#homepage .h-btn {
+.homepage .h-btn {
   width: 200px;
   height: 57px;
   padding: 1rem 2rem;
@@ -116,11 +133,11 @@ main .a-big-txt {
   text-decoration: none;
 }
 
-#about .a-small-txt {
+.about .a-small-txt {
   margin-bottom: 3rem;
 }
 
-#about .a-small-txt p {
+.about .a-small-txt p {
   width: 645px;
   max-height: 288px;
   font-family: Russo One;
@@ -131,7 +148,7 @@ main .a-big-txt {
   color: #ffffff;
 }
 
-#skills .s-big-txt {
+.skills .s-big-txt {
   width: 1091px;
   height: 88px;
   font-family: Russo One;
@@ -142,11 +159,11 @@ main .a-big-txt {
   color: #ff8214;
 }
 
-#skills .s-small-txt {
+.skills .s-small-txt {
   margin-bottom: 3rem;
 }
 
-#skills .s-small-txt p {
+.skills .s-small-txt p {
   width: 645px;
   max-height: 288px;
   font-family: Russo One;
@@ -157,7 +174,7 @@ main .a-big-txt {
   color: #ffffff;
 }
 
-#my-work {
+.my-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,13 +187,13 @@ main .a-big-txt {
           align-items: center;
 }
 
-#my-work .left-work {
+.my-work .left-work {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
 }
 
-#my-work .left-work .m-big-txt {
+.my-work .left-work .m-big-txt {
   width: 356px;
   height: 96px;
   font-family: Russo One;
@@ -187,11 +204,11 @@ main .a-big-txt {
   color: #ff8214;
 }
 
-#my-work .left-work .m-small-txt ul {
+.my-work .left-work .m-small-txt ul {
   list-style-type: none;
 }
 
-#my-work .left-work .m-small-txt ul li a {
+.my-work .left-work .m-small-txt ul li a {
   text-decoration: none;
   color: #3c3c3c;
   -webkit-transition: all .3s ease;
@@ -199,14 +216,14 @@ main .a-big-txt {
   font-size: 1.5rem;
 }
 
-#my-work .left-work .m-small-txt ul li a:hover {
+.my-work .left-work .m-small-txt ul li a:hover {
   color: #ff8214;
   font-size: 1.7rem;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-#my-work .right-work {
+.my-work .right-work {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
@@ -219,7 +236,7 @@ main .a-big-txt {
           transition-duration: 500ms;
 }
 
-#contact {
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,13 +249,13 @@ main .a-big-txt {
           align-items: center;
 }
 
-#contact .left-contact {
+.contact .left-contact {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
 }
 
-#contact .left-contact .c-big-txt {
+.contact .left-contact .c-big-txt {
   max-width: 1091px;
   height: 88px;
   font-family: Russo One;
@@ -249,11 +266,11 @@ main .a-big-txt {
   color: #ff8214;
 }
 
-#contact .left-contact .c-small-txt {
+.contact .left-contact .c-small-txt {
   margin-bottom: 3rem;
 }
 
-#contact .left-contact .c-small-txt p {
+.contact .left-contact .c-small-txt p {
   max-width: 500px;
   max-height: 288px;
   font-family: Russo One;
@@ -265,51 +282,51 @@ main .a-big-txt {
   margin-bottom: 3rem;
 }
 
-#contact .left-contact #contact-form input,
-#contact .left-contact #contact-form textarea {
+.contact .left-contact #contact-form input,
+.contact .left-contact #contact-form textarea {
   background-color: #3c3c3c;
   border-radius: 5px;
   border: none;
   outline: none;
 }
 
-#contact .left-contact #contact-form input {
+.contact .left-contact #contact-form input {
   height: 50px;
 }
 
-#contact .left-contact #contact-form #fname {
+.contact .left-contact #contact-form #fname {
   width: 240px;
   margin-bottom: 1rem;
 }
 
-#contact .left-contact #contact-form #fname[type=text] {
+.contact .left-contact #contact-form #fname[type=text] {
   color: #ff8214;
   font-size: 16px;
   padding: 15px 20px;
 }
 
-#contact .left-contact #contact-form #email {
+.contact .left-contact #contact-form #email {
   width: 240px;
 }
 
-#contact .left-contact #contact-form #email[type=email] {
+.contact .left-contact #contact-form #email[type=email] {
   color: #ff8214;
   font-size: 16px;
   padding: 15px 20px;
 }
 
-#contact .left-contact #contact-form #subject {
+.contact .left-contact #contact-form #subject {
   width: 486px;
   margin-bottom: 1rem;
 }
 
-#contact .left-contact #contact-form #subject[type=text] {
+.contact .left-contact #contact-form #subject[type=text] {
   color: #ff8214;
   font-size: 16px;
   padding: 15px 20px;
 }
 
-#contact .left-contact #contact-form #textarea {
+.contact .left-contact #contact-form #textarea {
   width: 486px;
   color: #ff8214;
   font-size: 16px;
@@ -317,7 +334,7 @@ main .a-big-txt {
   resize: none;
 }
 
-#contact .left-contact #contact-form .ctc-btn {
+.contact .left-contact #contact-form .ctc-btn {
   width: 72px;
   height: 32px;
   border: 2px solid #ff8214;
@@ -329,7 +346,7 @@ main .a-big-txt {
   color: #ff8214;
 }
 
-#contact .right-contact {
+.contact .right-contact {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
@@ -337,7 +354,7 @@ main .a-big-txt {
   height: 100%;
 }
 
-#contact .right-contact #map {
+.contact .right-contact #map {
   height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
