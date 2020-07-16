@@ -58,8 +58,10 @@ main {
 
 main #inner-logo {
   position: absolute;
-  top: 0;
-  right: 50px;
+  top: 10%;
+  right: 25%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
 }

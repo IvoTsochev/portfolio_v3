@@ -43,10 +43,12 @@ main {
 	justify-content: center;
 	height: 100vh;
 	padding-left: 7rem;
+	// LOGO
 	#inner-logo {
 		position: absolute;
-		top: 0;
-		right: 50px;
+		top: 10%;
+		right: 25%;
+		transform: translateY(-50%);
 		transform: rotate(-25deg);
 	}
 	.a-big-txt {
