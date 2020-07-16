@@ -56,6 +56,14 @@ main {
   padding-left: 7rem;
 }
 
+main #inner-logo {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
 main .a-big-txt {
   width: 388px;
   height: 96px;
@@ -67,18 +75,14 @@ main .a-big-txt {
   color: #ff8214;
 }
 
-main .s-big-txt {
-  width: 1091px;
-  height: 88px;
-  font-family: Russo One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  line-height: 96px;
-  color: #ff8214;
+.blog-corner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
 }
 
-main .h-small-txt p {
+#homepage .h-small-txt p {
   width: 589px;
   height: 24px;
   left: 158px;
@@ -91,26 +95,7 @@ main .h-small-txt p {
   color: #3c3c3c;
 }
 
-main .a-small-txt,
-main .s-small-txt,
-main .c-small-txt {
-  margin-bottom: 3rem;
-}
-
-main .a-small-txt p,
-main .s-small-txt p,
-main .c-small-txt p {
-  width: 645px;
-  max-height: 288px;
-  font-family: Russo One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #ffffff;
-}
-
-main .h-btn {
+#homepage .h-btn {
   width: 200px;
   height: 57px;
   padding: 1rem 2rem;
@@ -129,11 +114,45 @@ main .h-btn {
   text-decoration: none;
 }
 
-.blog-corner {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  cursor: pointer;
+#about .a-small-txt {
+  margin-bottom: 3rem;
+}
+
+#about .a-small-txt p {
+  width: 645px;
+  max-height: 288px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+#skills .s-big-txt {
+  width: 1091px;
+  height: 88px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 96px;
+  color: #ff8214;
+}
+
+#skills .s-small-txt {
+  margin-bottom: 3rem;
+}
+
+#skills .s-small-txt p {
+  width: 645px;
+  max-height: 288px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
 }
 
 #my-work {
@@ -161,7 +180,7 @@ main .h-btn {
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 96px;
   color: #ff8214;
 }
@@ -223,7 +242,7 @@ main .h-btn {
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 96px;
   color: #ff8214;
 }
@@ -244,26 +263,12 @@ main .h-btn {
   margin-bottom: 3rem;
 }
 
-#contact .left-contact #contact-form input, #contact .left-contact #contact-form textarea {
+#contact .left-contact #contact-form input,
+#contact .left-contact #contact-form textarea {
   background-color: #3c3c3c;
   border-radius: 5px;
   border: none;
-}
-
-#contact .left-contact #contact-form input::-webkit-input-placeholder, #contact .left-contact #contact-form textarea::-webkit-input-placeholder {
-  padding-left: 1rem;
-}
-
-#contact .left-contact #contact-form input:-ms-input-placeholder, #contact .left-contact #contact-form textarea:-ms-input-placeholder {
-  padding-left: 1rem;
-}
-
-#contact .left-contact #contact-form input::-ms-input-placeholder, #contact .left-contact #contact-form textarea::-ms-input-placeholder {
-  padding-left: 1rem;
-}
-
-#contact .left-contact #contact-form input::placeholder, #contact .left-contact #contact-form textarea::placeholder {
-  padding-left: 1rem;
+  outline: none;
 }
 
 #contact .left-contact #contact-form input {
@@ -275,8 +280,20 @@ main .h-btn {
   margin-bottom: 1rem;
 }
 
+#contact .left-contact #contact-form #fname[type=text] {
+  color: #ff8214;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
 #contact .left-contact #contact-form #email {
   width: 240px;
+}
+
+#contact .left-contact #contact-form #email[type=email] {
+  color: #ff8214;
+  font-size: 16px;
+  padding: 15px 20px;
 }
 
 #contact .left-contact #contact-form #subject {
@@ -284,24 +301,30 @@ main .h-btn {
   margin-bottom: 1rem;
 }
 
+#contact .left-contact #contact-form #subject[type=text] {
+  color: #ff8214;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
 #contact .left-contact #contact-form #textarea {
   width: 486px;
+  color: #ff8214;
+  font-size: 16px;
+  padding: 15px 20px;
+  resize: none;
 }
 
-#contact .left-contact #contact-form #textarea::-webkit-input-placeholder {
-  padding-top: 1rem;
-}
-
-#contact .left-contact #contact-form #textarea:-ms-input-placeholder {
-  padding-top: 1rem;
-}
-
-#contact .left-contact #contact-form #textarea::-ms-input-placeholder {
-  padding-top: 1rem;
-}
-
-#contact .left-contact #contact-form #textarea::placeholder {
-  padding-top: 1rem;
+#contact .left-contact #contact-form .ctc-btn {
+  width: 72px;
+  height: 32px;
+  border: 2px solid #ff8214;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-top: 1rem;
+  color: #ff8214;
 }
 
 #contact .right-contact {
@@ -312,7 +335,7 @@ main .h-btn {
   height: 100%;
 }
 
-#contact .right-contact iframe {
-  width: 100%;
+#contact .right-contact #map {
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

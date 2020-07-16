@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(){
+
 // MY WORK PAGE
 const dennyConstruction = document.querySelector('#dennyconstruction');
 const hikov = document.querySelector('#hikov');
@@ -79,3 +81,7 @@ function v1In() {
 // function v1Out() {
 // 	rightWork.style.backgroundImage = 'none';
 // }
+
+
+
+});

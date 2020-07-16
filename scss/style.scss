@@ -1,4 +1,3 @@
-
 * {
 	margin: 0px;
 	padding: 0px;
@@ -44,6 +43,12 @@ main {
 	justify-content: center;
 	height: 100vh;
 	padding-left: 7rem;
+	#inner-logo {
+		position: absolute;
+		top: 0;
+		right: 50px;
+		transform: rotate(-25deg);
+	}
 	.a-big-txt {
 		width: 388px;
 		height: 96px;
@@ -54,18 +59,16 @@ main {
 		line-height: 96px;
 		color: #ff8214;
 	}
-	.s-big-txt {
-		width: 1091px;
-		height: 88px;
-		font-family: Russo One;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 50px;
-		line-height: 96px;
-		color: #ff8214;
-	}
-	
+}
+.blog-corner {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+}
 
+// HOMEPAGE
+#homepage {
 	.h-small-txt {
 		p {
 			width: 589px;
@@ -80,22 +83,6 @@ main {
 			color: #3c3c3c;
 		}
 	}
-	.a-small-txt,
-	.s-small-txt,
-	.c-small-txt {
-		margin-bottom: 3rem;
-		p {
-			width: 645px;
-			max-height: 288px;
-			font-family: Russo One;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 14px;
-			line-height: 19px;
-			color: #ffffff;
-		}
-	}
-
 	.h-btn {
 		width: 200px;
 		height: 57px;
@@ -114,11 +101,49 @@ main {
 		text-decoration: none;
 	}
 }
-.blog-corner {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	cursor: pointer;
+
+// ABOUT ME
+#about {
+	.a-small-txt {
+		margin-bottom: 3rem;
+		p {
+			width: 645px;
+			max-height: 288px;
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 19px;
+			color: #ffffff;
+		}
+	}
+}
+
+// SKILLS
+#skills {
+	.s-big-txt {
+		width: 1091px;
+		height: 88px;
+		font-family: Russo One;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 96px;
+		color: #ff8214;
+	}
+	.s-small-txt {
+		margin-bottom: 3rem;
+		p {
+			width: 645px;
+			max-height: 288px;
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 19px;
+			color: #ffffff;
+		}
+	}
 }
 
 // MY WORK PAGE
@@ -135,7 +160,7 @@ main {
 			font-family: Russo One;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 50px;
+			font-size: 40px;
 			line-height: 96px;
 			color: #ff8214;
 		}
@@ -185,7 +210,7 @@ main {
 			font-family: Russo One;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 50px;
+			font-size: 40px;
 			line-height: 96px;
 			color: #ff8214;
 		}
@@ -204,13 +229,12 @@ main {
 			}
 		}
 		#contact-form {
-			input,textarea {
+			input,
+			textarea {
 				background-color: #3c3c3c;
 				border-radius: 5px;
 				border: none;
-				&::placeholder {
-					padding-left: 1rem;
-				}
+				outline: none;
 			}
 			input {
 				height: 50px;
@@ -218,19 +242,45 @@ main {
 			#fname {
 				width: 240px;
 				margin-bottom: 1rem;
+				&[type=text] {
+					color: #ff8214;
+					font-size: 16px;
+					padding: 15px 20px;
+				}
 			}
 			#email {
 				width: 240px;
+				&[type=email] {
+					color: #ff8214;
+					font-size: 16px;
+					padding: 15px 20px;
+				}
 			}
 			#subject {
 				width: 486px;
 				margin-bottom: 1rem;
+				&[type=text] {
+					color: #ff8214;
+					font-size: 16px;
+					padding: 15px 20px;
+				}
 			}
 			#textarea {
 				width: 486px;
-				&::placeholder {
-					padding-top: 1rem;
-				}
+				color: #ff8214;
+				font-size: 16px;
+				padding: 15px 20px;
+				resize: none;
+			}
+			.ctc-btn {
+				width: 72px;
+				height: 32px;
+				border: 2px solid #ff8214;
+				box-sizing: border-box;
+				border-radius: 5px;
+				background-color: transparent;
+				margin-top: 1rem;
+				color: #ff8214;
 			}
 		}
 	}
@@ -238,8 +288,8 @@ main {
 		flex: 50%;
 		border-left: 1px solid #3c3c3c;
 		height: 100%;
-		iframe {
-			width: 100%;
+		#map {
+			height: 100%;
 		}
 	}
 }

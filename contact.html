@@ -119,18 +119,21 @@
                     viverra sem commodo. Curabitur eu consequat odio. Praesent ac ex sed dolor dapibus rutrum.
                     Vestibulum feugiat non ante sit amet euismod.</p>
                 <div id="contact-form">
-                    <form action="action_page.php">
-                        <input type="text" id="fname" name="firstname" placeholder="Name">
+                    <form action="contactform.php" method="POST">
+                        <input type="text" id="fname" name="name" placeholder="Name">
                         <input type="email" id="email" name="email" placeholder="eMail">
                         <br>
                         <input type="text" id="subject" name="subject" placeholder="Subject">
                         <br>
                         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                        <br>
+                        <button class="ctc-btn" type="submit" name="submit">SEND</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="right-contact">
+            <div id="map"></div>
             
         </div>
 
@@ -146,6 +149,250 @@
 
     </div>
 
+
+    <script src="/js/script.js"></script>
+    <script>
+        function initMap() {
+          // Styles a map in night mode.
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 42.6977, lng: 23.3219},
+            zoom: 12,
+            styles: [
+    {
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#212121"
+        }
+      ]
+    },
+    {
+      "elementType": "labels",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#212121"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.country",
+      "elementType": "labels.text",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.country",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#9e9e9e"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.land_parcel",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.locality",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.province",
+      "elementType": "labels.text",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.province",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "featureType": "landscape",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#181818"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#1b1b1b"
+        }
+      ]
+    },
+    {
+      "featureType": "road",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#2c2c2c"
+        }
+      ]
+    },
+    {
+      "featureType": "road",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#8a8a8a"
+        }
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#373737"
+        }
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#ff8214"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#3c3c3c"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway.controlled_access",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#4e4e4e"
+        }
+      ]
+    },
+    {
+      "featureType": "transit",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#3d3d3d"
+        }
+      ]
+    }
+  ]
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDiKmMD2ZDCnIxYIA5ScOA6pOSXp83zG4&callback=initMap"
+      async defer></script>
+      
 </body>
 
 </html>
