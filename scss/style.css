@@ -76,7 +76,7 @@ main {
 main #inner-logo {
   position: absolute;
   top: 10%;
-  right: 25%;
+  right: 16%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transform: rotate(-25deg);
