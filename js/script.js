@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+
+	if (document.querySelector('.my-work')) {
+		
 	// MY WORK PAGE
 	const dennyConstruction = document.querySelector('#dennyconstruction');
 	const hikov = document.querySelector('#hikov');
@@ -47,4 +51,26 @@ document.addEventListener('DOMContentLoaded', function() {
 	function v1In() {
 		rightWork.style.backgroundImage = "url('img/v1.png')";
 	}
+}
+
+
+	// NAVIGATION
+	function resizeIcons() {
+		let allIcons = Array.from(document.querySelectorAll('.inner-nav a svg'));
+		allIcons.forEach((e) => {
+			e.setAttribute('width', '25px');
+		});
+	}
+
+	function resizeTimeline() {
+		document.querySelector('.timeline svg').setAttribute('width', 'auto');
+	}
+
+
+	if (window.screen.width <= '500') {
+		resizeIcons();
+		resizeTimeline();
+	}
+
+
 });

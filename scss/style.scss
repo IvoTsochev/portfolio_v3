@@ -10,21 +10,15 @@ body {
 	overflow: hidden;
 }
 
-// SWUP ANIMATION
-.transition-fade {
-	opacity: 1;
-	transition: 500ms;
-	// transform: translateX(0);
-	// transform-origin: left;
-}
+// ANIMATION
+@keyframes pageTransitionIn {
+    from {
+        opacity: 0;
+    }
 
-html.is-animating .transition-fade {
-	opacity: 1;
-	transform: translateX(100%);
-}
-
-html.is-leaving .transition-fade {
-	opacity: 0;
+    to {
+        opacity: 1;
+    }
 }
 
 // NAVIGATION
@@ -68,9 +62,10 @@ main {
 		right: 16%;
 		transform: translateY(-50%);
 		transform: rotate(-25deg);
+		opacity: 0.1;
 	}
 	.a-big-txt {
-		width: 388px;
+		max-width: 388px;
 		height: 96px;
 		font-family: Russo One;
 		font-style: normal;
@@ -89,6 +84,20 @@ main {
 
 // HOMEPAGE
 .homepage {
+	animation: pageTransitionIn 1.00s ease-in-out;
+	.h-big-txt {
+		font-family: Russo One;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 120px;
+		color: #ffffff;
+		h1 {
+			span {
+				color: #ff8214;
+			}
+		}
+	}
 	.h-small-txt {
 		p {
 			width: 589px;
@@ -124,10 +133,11 @@ main {
 
 // ABOUT ME
 .about {
+	animation: pageTransitionIn 1.00s ease-in-out;
 	.a-small-txt {
 		margin-bottom: 3rem;
 		p {
-			width: 645px;
+			max-width: 645px;
 			max-height: 288px;
 			font-family: Russo One;
 			font-style: normal;
@@ -141,8 +151,9 @@ main {
 
 // SKILLS
 .skills {
+	animation: pageTransitionIn 1.00s ease-in-out;
 	.s-big-txt {
-		width: 1091px;
+		max-width: 1091px;
 		height: 88px;
 		font-family: Russo One;
 		font-style: normal;
@@ -154,7 +165,7 @@ main {
 	.s-small-txt {
 		margin-bottom: 3rem;
 		p {
-			width: 645px;
+			max-width: 645px;
 			max-height: 288px;
 			font-family: Russo One;
 			font-style: normal;
@@ -169,6 +180,7 @@ main {
 // MY WORK PAGE
 
 .my-work {
+	animation: pageTransitionIn 1.00s ease-in-out;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -219,6 +231,7 @@ main {
 // CONTACT PAGE
 
 .contact {
+	animation: pageTransitionIn 1.00s ease-in-out;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -310,6 +323,352 @@ main {
 		height: 100%;
 		#map {
 			height: 100%;
+		}
+	}
+}
+
+// ███╗░░░███╗███████╗██████╗░██╗░█████╗░  ░██████╗░██╗░░░██╗███████╗██████╗░██╗░░░██╗
+// ████╗░████║██╔════╝██╔══██╗██║██╔══██╗  ██╔═══██╗██║░░░██║██╔════╝██╔══██╗╚██╗░██╔╝
+// ██╔████╔██║█████╗░░██║░░██║██║███████║  ██║██╗██║██║░░░██║█████╗░░██████╔╝░╚████╔╝░
+// ██║╚██╔╝██║██╔══╝░░██║░░██║██║██╔══██║  ╚██████╔╝██║░░░██║██╔══╝░░██╔══██╗░░╚██╔╝░░
+// ██║░╚═╝░██║███████╗██████╔╝██║██║░░██║  ░╚═██╔═╝░╚██████╔╝███████╗██║░░██║░░░██║░░░
+// ╚═╝░░░░░╚═╝╚══════╝╚═════╝░╚═╝╚═╝░░╚═╝  ░░░╚═╝░░░░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░
+
+// ░░███╗░░██████╗░░█████╗░░█████╗░██╗░░██╗
+// ░████║░░╚════██╗██╔══██╗██╔══██╗╚██╗██╔╝
+// ██╔██║░░░░███╔═╝██║░░██║██║░░██║░╚███╔╝░
+// ╚═╝██║░░██╔══╝░░██║░░██║██║░░██║░██╔██╗░
+// ███████╗███████╗╚█████╔╝╚█████╔╝██╔╝╚██╗
+// ╚══════╝╚══════╝░╚════╝░░╚════╝░╚═╝░░╚═╝
+
+// ███████╗░█████╗░░█████╗░██╗░░██╗
+// ██╔════╝██╔══██╗██╔══██╗╚██╗██╔╝
+// ██████╗░██║░░██║██║░░██║░╚███╔╝░
+// ╚════██╗██║░░██║██║░░██║░██╔██╗░
+// ██████╔╝╚█████╔╝╚█████╔╝██╔╝╚██╗
+// ╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚═╝
+
+@media (max-width: 500px) {
+	body {
+		background-color: #1d1d1d;
+		overflow: hidden;
+	}
+
+	// ANIMATION
+
+	// NAVIGATION ---------------------500--------------------------------------
+	.vertical-nav {
+		position: fixed;
+		background-color: #131313;
+		height: 50px;
+		width: 100%;
+		.inner-nav {
+			position: relative;
+			top: unset;
+			left: unset;
+			transform: inherit;
+			max-width: 200px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-around;
+			margin-top: 6.5px;
+			svg {
+				margin-bottom: 0px;
+			}
+		}
+		.social-nav {
+			position: absolute;
+			bottom: 43px;
+			left: 50%;
+			transform: translateX(-50%);
+			svg {
+				margin-bottom: 17px;
+			}
+		}
+	}
+	// END NAVIGATION---------------------500--------------------------------------
+
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100vh;
+		padding-left: 2rem;
+		// LOGO---------------------500--------------------------------------
+		#inner-logo {
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			transform: rotate(0deg);
+			transform: translateY(-50%) !important;
+			transform: translateX(50%) !important;
+			opacity: 0.05;
+			z-index: -1;
+		}
+
+	}
+	.blog-corner {
+		position: absolute;
+		top: unset;
+		right: 0px;
+		cursor: pointer;
+		bottom: 0;
+		transform: rotate(90deg);
+	}
+
+	// HOMEPAGE---------------------500--------------------------------------
+	.homepage {
+		.h-big-txt {
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 50px;
+			color: #ffffff;
+			h1 {
+				span {
+					color: #ff8214;
+				}
+			}
+		}
+		.h-small-txt {
+			p {
+				width: 300px;
+				height: 24px;
+				left: 158px;
+				top: 692px;
+				font-family: Russo One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 19px;
+				line-height: 23px;
+				color: #3c3c3c;
+			}
+		}
+		.h-btn {
+			width: 200px;
+			height: 57px;
+			padding: 1rem 2rem;
+			left: 158px;
+			top: 736px;
+			border: 2px solid #ff8214;
+			box-sizing: border-box;
+			background-color: transparent;
+			margin-top: 50px;
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			color: #ff8214;
+			text-decoration: none;
+		}
+	}
+
+	// ABOUT ME---------------------500--------------------------------------
+	.about {
+		.a-big-txt {
+			max-width: 388px;
+			height: 96px;
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 44px;
+			color: #ff8214;
+		}
+		.a-small-txt {
+			margin-bottom: 3rem;
+			p {
+				max-width: 645px;
+				max-height: 288px;
+				font-family: Russo One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 19px;
+				color: #ffffff;
+			}
+		}
+	}
+
+	// SKILLS---------------------500--------------------------------------
+	.skills {
+		.s-big-txt {
+			max-width: 1091px;
+			height: 88px;
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 44px;
+			color: #ff8214;
+			margin-bottom: 4rem;
+		}
+		.s-small-txt {
+			margin-bottom: 3rem;
+			p {
+				max-width: 645px;
+				max-height: 288px;
+				font-family: Russo One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 19px;
+				color: #ffffff;
+			}
+		}
+	}
+
+	// MY WORK PAGE---------------------500--------------------------------------
+
+	.my-work {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		.left-work {
+			flex: 50%;
+			.m-big-txt {
+				width: 356px;
+				height: 96px;
+				font-family: Russo One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 40px;
+				line-height: 96px;
+				color: #ff8214;
+			}
+			.m-small-txt {
+				ul {
+					list-style-type: none;
+					li {
+						&:hover {
+						}
+						a {
+							text-decoration: none;
+							color: #3c3c3c;
+							transition: all .3s ease;
+							font-size: 1.5rem;
+							&:hover {
+								color: #ff8214;
+								font-size: 1.7rem;
+								transition: all .3s ease;
+							}
+						}
+					}
+				}
+			}
+		}
+		.right-work {
+			flex: 50%;
+			border: #3c3c3c solid 1px;
+			height: 100%;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			transition-duration: 500ms;
+		}
+	}
+
+	// CONTACT PAGE---------------------500--------------------------------------
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.left-contact {
+			flex: 50%;
+			padding-top: 4rem;
+			.c-big-txt {
+				max-width: 1091px;
+				height: 88px;
+				font-family: Russo One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 30px;
+				line-height: 96px;
+				color: #ff8214;
+			}
+			.c-small-txt {
+				margin-bottom: 3rem;
+				p {
+					max-width: 500px;
+					max-height: 288px;
+					font-family: Russo One;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 19px;
+					color: #ffffff;
+					margin-bottom: 3rem;
+				}
+			}
+			#contact-form {
+				input,
+				textarea {
+					background-color: #3c3c3c;
+					border-radius: 5px;
+					border: none;
+					outline: none;
+					opacity: 0.8;
+				}
+				input {
+					height: 50px;
+				}
+				#fname {
+					width: 330px;
+					margin-bottom: 1rem;
+					&[type=text] {
+						color: #ff8214;
+						font-size: 16px;
+						padding: 15px 20px;
+					}
+				}
+				#email {
+					width: 330px;
+					margin-bottom: 1rem;
+					&[type=email] {
+						color: #ff8214;
+						font-size: 14px;
+						padding: 15px 20px;
+					}
+				}
+				#subject {
+					max-width: 330px;
+					margin-bottom: 1rem;
+					&[type=text] {
+						color: #ff8214;
+						font-size: 16px;
+						padding: 15px 20px;
+					}
+				}
+				#textarea {
+					max-width: 330px;
+					color: #ff8214;
+					font-size: 16px;
+					padding: 15px 20px;
+					resize: none;
+				}
+				.ctc-btn {
+					max-width: 72px;
+					height: 32px;
+					border: 2px solid #ff8214;
+					box-sizing: border-box;
+					border-radius: 5px;
+					background-color: transparent;
+					margin-top: 1rem;
+					color: #ff8214;
+				}
+			}
+		}
+		.right-contact {
+			flex: 50%;
+			border-left: 1px solid #3c3c3c;
+			height: 100%;
+			display: none;
+			#map {
+				height: 100%;
+				display: none;
+			}
 		}
 	}
 }
