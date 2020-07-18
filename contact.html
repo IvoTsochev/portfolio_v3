@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -115,17 +115,15 @@
                 <h2>Contact Me</h2>
             </div>
             <div class="c-small-txt">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat arcu vitae neque interdum, nec
-                    viverra sem commodo. Curabitur eu consequat odio. Praesent ac ex sed dolor dapibus rutrum.
-                    Vestibulum feugiat non ante sit amet euismod.</p>
+                <p>If you have any questions, don't hesitate to email me via the form below.</p>
                 <div id="contact-form">
                     <form action="contactform.php" method="POST">
-                        <input type="text" id="fname" name="name" placeholder="Name">
-                        <input type="email" id="email" name="email" placeholder="eMail">
+                        <input type="text" id="fname" name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'">
+                        <input type="email" id="email" name="email" placeholder="eMail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'eMail'">
                         <br>
-                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
                         <br>
-                        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'"></textarea>
                         <br>
                         <button class="ctc-btn" type="submit" name="submit">SEND</button>
                     </form>
