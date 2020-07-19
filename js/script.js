@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
+
+	// BLOG Button
 	document.querySelector('.blog-corner').addEventListener('click', () => {
 		alert('Upps, this is still under construction')
 	});

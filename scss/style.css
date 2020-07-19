@@ -205,6 +205,11 @@ main .a-big-txt {
   color: #ffffff;
 }
 
+.about .a-small-txt p a {
+  text-decoration: none;
+  color: #ff8214;
+}
+
 .skills {
   -webkit-animation: pageTransitionIn 1.00s ease-in-out;
           animation: pageTransitionIn 1.00s ease-in-out;
@@ -234,6 +239,119 @@ main .a-big-txt {
   font-size: 14px;
   line-height: 19px;
   color: #ffffff;
+}
+
+.skills .skills-container {
+  width: 500px;
+  padding: 20px;
+}
+
+.skills .skills-container li {
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.skills .skills-container li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: #ff8214;
+  opacity: 0.3;
+  border-radius: 1000px;
+}
+
+.skills .skills-container li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: #ff8214;
+  border-radius: 1000px;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+
+.skills .skills-container li.wordpress::after {
+  -webkit-animation-name: wordpress;
+          animation-name: wordpress;
+}
+
+@-webkit-keyframes wordpress {
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes wordpress {
+  to {
+    width: 85%;
+  }
+}
+
+.skills .skills-container li.html::after {
+  -webkit-animation-name: html;
+          animation-name: html;
+}
+
+@-webkit-keyframes html {
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes html {
+  to {
+    width: 80%;
+  }
+}
+
+.skills .skills-container li.css::after {
+  -webkit-animation-name: css;
+          animation-name: css;
+}
+
+@-webkit-keyframes css {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes css {
+  to {
+    width: 70%;
+  }
+}
+
+.skills .skills-container li.js::after {
+  -webkit-animation-name: js;
+          animation-name: js;
+}
+
+@-webkit-keyframes js {
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes js {
+  to {
+    width: 60%;
+  }
 }
 
 .my-work {
@@ -312,8 +430,13 @@ main .a-big-txt {
   display: none;
 }
 
-.my-work .right-work .project-info h2 {
+.my-work .right-work .project-info h2 a {
   color: #ff8214;
+  text-decoration: none;
+}
+
+.my-work .right-work .project-info p {
+  color: #fff;
 }
 
 .my-work .right-work .project-info p span {

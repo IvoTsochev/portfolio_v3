@@ -164,6 +164,10 @@ main {
 			font-size: 14px;
 			line-height: 19px;
 			color: #ffffff;
+			a {
+				text-decoration: none;
+				color: #ff8214;
+			}
 		}
 	}
 }
@@ -192,6 +196,76 @@ main {
 			font-size: 14px;
 			line-height: 19px;
 			color: #ffffff;
+		}
+	}
+	.skills-container {
+		width: 500px;
+		padding: 20px;
+		li {
+			position: relative;
+			list-style: none;
+			margin: 50px 0;
+			font-weight: 500;
+			text-transform: uppercase;
+			color: #fff;
+			&::before {
+				content: "";
+				position: absolute;
+				top: calc(100% + 10px);
+				left: 0;
+				width: 100%;
+				height: 15px;
+				background-color: #ff8214;
+				opacity: 0.3;
+				border-radius: 1000px;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				top: calc(100% + 10px);
+				left: 0;
+				width: 0;
+				height: 15px;
+				background-color: #ff8214;
+				border-radius: 1000px;
+				animation-duration: .7s;
+				animation-timing-function: ease-in-out;
+				animation-fill-mode: forwards;
+				animation-delay: .7s;
+
+			}
+			&.wordpress::after {
+				animation-name: wordpress;
+			}
+			@keyframes wordpress {
+				to {
+					width: 85%;
+				}
+			}
+			&.html::after {
+				animation-name: html;
+			}
+			@keyframes html {
+				to {
+					width: 80%;
+				}
+			}
+			&.css::after {
+				animation-name: css;
+			}
+			@keyframes css {
+				to {
+					width: 70%;
+				}
+			}
+			&.js::after {
+				animation-name: js;
+			}
+			@keyframes js {
+				to {
+					width: 60%;
+				}
+			}
 		}
 	}
 }
@@ -255,9 +329,13 @@ main {
 			color: #3c3c3c;
 			display: none;
 			h2 {
-				color: #ff8214;
+				a {
+					color: #ff8214;
+					text-decoration: none;
+				}
 			}
 			p {
+				color: #fff;
 				span {
 					color: greenyellow;
 				}
