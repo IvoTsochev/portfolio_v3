@@ -241,6 +241,10 @@ main .a-big-txt {
   color: #ffffff;
 }
 
+.skills .s-small-txt p a {
+  color: #ff8214;
+}
+
 .skills .skills-container {
   width: 500px;
   padding: 20px;
@@ -351,6 +355,23 @@ main .a-big-txt {
 @keyframes js {
   to {
     width: 60%;
+  }
+}
+
+.skills .skills-container li.react::after {
+  -webkit-animation-name: react;
+          animation-name: react;
+}
+
+@-webkit-keyframes react {
+  to {
+    width: 5%;
+  }
+}
+
+@keyframes react {
+  to {
+    width: 5%;
   }
 }
 

@@ -196,6 +196,9 @@ main {
 			font-size: 14px;
 			line-height: 19px;
 			color: #ffffff;
+			a {
+				color: #ff8214;
+			}
 		}
 	}
 	.skills-container {
@@ -264,6 +267,14 @@ main {
 			@keyframes js {
 				to {
 					width: 60%;
+				}
+			}
+			&.react::after {
+				animation-name: react;
+			}
+			@keyframes react {
+				to {
+					width: 5%;
 				}
 			}
 		}

@@ -113,8 +113,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (document.querySelector('.about')) {
 			resizeTimeline();
 		}
-
 	}
+
+
+	
 
 
 });
