@@ -186,7 +186,7 @@ main {
 		color: #ff8214;
 	}
 	.s-small-txt {
-		margin-bottom: 3rem;
+		margin-bottom: 1rem;
 		p {
 			max-width: 645px;
 			max-height: 288px;
@@ -528,17 +528,19 @@ main {
 		flex-direction: column;
 		justify-content: center;
 		height: 100vh;
-		padding-left: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 		// LOGO---------------------500--------------------------------------
 		#inner-logo {
 			position: absolute;
-			top: 50%;
+			top: 18%;
 			right: 50%;
 			transform: rotate(0deg);
 			transform: translateY(-50%) !important;
 			transform: translateX(50%) !important;
 			opacity: 0.05;
 			z-index: -1;
+			overflow: hidden;
 		}
 
 	}
@@ -583,7 +585,7 @@ main {
 		.h-btn {
 			width: 200px;
 			height: 57px;
-			padding: 1rem 2rem;
+			padding: 1rem 1rem;
 			left: 158px;
 			top: 736px;
 			border: 2px solid #ff8214;
@@ -593,9 +595,10 @@ main {
 			font-family: Russo One;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 20px;
+			font-size: 16px;
 			color: #ff8214;
 			text-decoration: none;
+			text-align: center;
 		}
 	}
 
@@ -612,7 +615,7 @@ main {
 			color: #ff8214;
 		}
 		.a-small-txt {
-			margin-bottom: 3rem;
+			margin-bottom: 1rem;
 			p {
 				max-width: 645px;
 				max-height: 288px;
@@ -623,6 +626,9 @@ main {
 				line-height: 19px;
 				color: #ffffff;
 			}
+		}
+		.timeline {
+			display: none;
 		}
 	}
 
@@ -637,10 +643,10 @@ main {
 			font-size: 30px;
 			line-height: 44px;
 			color: #ff8214;
-			margin-bottom: 4rem;
+			margin-bottom: 1rem;
 		}
 		.s-small-txt {
-			margin-bottom: 3rem;
+			margin-bottom: 0rem;
 			p {
 				max-width: 645px;
 				max-height: 288px;
@@ -651,6 +657,9 @@ main {
 				line-height: 19px;
 				color: #ffffff;
 			}
+		}
+		.skills-container {
+			display: none;
 		}
 	}
 
@@ -734,7 +743,7 @@ main {
 					font-size: 14px;
 					line-height: 19px;
 					color: #ffffff;
-					margin-bottom: 3rem;
+					margin-bottom: 1rem;
 				}
 			}
 			#contact-form {
@@ -782,6 +791,7 @@ main {
 					font-size: 16px;
 					padding: 15px 20px;
 					resize: none;
+					height: 150px;
 				}
 				.ctc-btn {
 					max-width: 72px;

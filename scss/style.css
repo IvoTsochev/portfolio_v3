@@ -227,7 +227,7 @@ main .a-big-txt {
 }
 
 .skills .s-small-txt {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .skills .s-small-txt p {
@@ -651,11 +651,12 @@ main .a-big-txt {
         -ms-flex-pack: center;
             justify-content: center;
     height: 100vh;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   main #inner-logo {
     position: absolute;
-    top: 50%;
+    top: 18%;
     right: 50%;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -665,6 +666,7 @@ main .a-big-txt {
             transform: translateX(50%) !important;
     opacity: 0.05;
     z-index: -1;
+    overflow: hidden;
   }
   .blog-corner {
     position: absolute;
@@ -701,7 +703,7 @@ main .a-big-txt {
   .homepage .h-btn {
     width: 200px;
     height: 57px;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     left: 158px;
     top: 736px;
     border: 2px solid #ff8214;
@@ -712,9 +714,10 @@ main .a-big-txt {
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
     color: #ff8214;
     text-decoration: none;
+    text-align: center;
   }
   .about .a-big-txt {
     max-width: 388px;
@@ -727,7 +730,7 @@ main .a-big-txt {
     color: #ff8214;
   }
   .about .a-small-txt {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   .about .a-small-txt p {
     max-width: 645px;
@@ -739,6 +742,9 @@ main .a-big-txt {
     line-height: 19px;
     color: #ffffff;
   }
+  .about .timeline {
+    display: none;
+  }
   .skills .s-big-txt {
     max-width: 1091px;
     height: 88px;
@@ -748,10 +754,10 @@ main .a-big-txt {
     font-size: 30px;
     line-height: 44px;
     color: #ff8214;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
   .skills .s-small-txt {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
   }
   .skills .s-small-txt p {
     max-width: 645px;
@@ -762,6 +768,9 @@ main .a-big-txt {
     font-size: 12px;
     line-height: 19px;
     color: #ffffff;
+  }
+  .skills .skills-container {
+    display: none;
   }
   .my-work {
     display: -webkit-box;
@@ -858,7 +867,7 @@ main .a-big-txt {
     font-size: 14px;
     line-height: 19px;
     color: #ffffff;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   .contact .left-contact #contact-form input,
   .contact .left-contact #contact-form textarea {
@@ -904,6 +913,7 @@ main .a-big-txt {
     font-size: 16px;
     padding: 15px 20px;
     resize: none;
+    height: 150px;
   }
   .contact .left-contact #contact-form .ctc-btn {
     max-width: 72px;

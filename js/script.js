@@ -96,24 +96,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// NAVIGATION
-	function resizeIcons() {
-		let allIcons = Array.from(document.querySelectorAll('.inner-nav a svg'));
-		allIcons.forEach((e) => {
-			e.setAttribute('width', '25px');
-		});
-	}
+	// function resizeIcons() {
+	// 	let allIcons = Array.from(document.querySelectorAll('.inner-nav a svg'));
+	// 	allIcons.forEach((e) => {
+	// 		e.setAttribute('width', '25px');
+	// 	});
+	// }
 
-	function resizeTimeline() {
-		document.querySelector('.timeline svg').setAttribute('width', 'auto');
-	}
+	// function resizeTimeline() {
+	// 	document.querySelector('.timeline svg').setAttribute('width', '350');
+	// }
 
 
-	if (window.screen.width <= '500') {
-		resizeIcons();
-		if (document.querySelector('.about')) {
-			resizeTimeline();
-		}
-	}
+	// if (window.screen.width <= '500') {
+	// 	resizeIcons();
+	// 	if (document.querySelector('.about')) {
+	// 		resizeTimeline();
+	// 	}
+	// }
 
 
 	
