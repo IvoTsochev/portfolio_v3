@@ -3,7 +3,7 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
 }
 
 body {
@@ -128,8 +128,8 @@ main .a-big-txt {
 }
 
 .homepage {
-  -webkit-animation: pageTransitionIn 1.00s ease-in-out;
-          animation: pageTransitionIn 1.00s ease-in-out;
+  -webkit-animation: pageTransitionIn 1s ease-in-out;
+          animation: pageTransitionIn 1s ease-in-out;
 }
 
 .homepage .h-big-txt {
@@ -175,8 +175,8 @@ main .a-big-txt {
   font-size: 20px;
   color: #3c3c3c;
   text-decoration: none;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .homepage .h-btn:hover {
@@ -187,8 +187,8 @@ main .a-big-txt {
 }
 
 .about {
-  -webkit-animation: pageTransitionIn 1.00s ease-in-out;
-          animation: pageTransitionIn 1.00s ease-in-out;
+  -webkit-animation: pageTransitionIn 1s ease-in-out;
+          animation: pageTransitionIn 1s ease-in-out;
 }
 
 .about .a-small-txt {
@@ -212,8 +212,8 @@ main .a-big-txt {
 }
 
 .skills {
-  -webkit-animation: pageTransitionIn 1.00s ease-in-out;
-          animation: pageTransitionIn 1.00s ease-in-out;
+  -webkit-animation: pageTransitionIn 1s ease-in-out;
+          animation: pageTransitionIn 1s ease-in-out;
 }
 
 .skills .s-big-txt {
@@ -281,14 +281,14 @@ main .a-big-txt {
   height: 15px;
   background-color: #ff8214;
   border-radius: 1000px;
-  -webkit-animation-duration: .7s;
-          animation-duration: .7s;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 .skills .skills-container li.wordpress::after {
@@ -377,8 +377,8 @@ main .a-big-txt {
 }
 
 .my-work {
-  -webkit-animation: pageTransitionIn 1.00s ease-in-out;
-          animation: pageTransitionIn 1.00s ease-in-out;
+  -webkit-animation: pageTransitionIn 1s ease-in-out;
+          animation: pageTransitionIn 1s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,6 +389,14 @@ main .a-big-txt {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.my-work .left-work .m-small-txt ul li a:hover .fa-react {
+  color: #61dbfb;
+}
+
+.my-work .left-work .m-small-txt ul li a:hover .fa-wordpress-simple {
+  color: #21759b;
 }
 
 .my-work .left-work {
@@ -415,16 +423,16 @@ main .a-big-txt {
 .my-work .left-work .m-small-txt ul li a {
   text-decoration: none;
   color: #3c3c3c;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 1.5rem;
 }
 
 .my-work .left-work .m-small-txt ul li a:hover {
   color: #ff8214;
   font-size: 1.7rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .my-work .right-work {
@@ -470,8 +478,8 @@ main .a-big-txt {
 }
 
 .contact {
-  -webkit-animation: pageTransitionIn 1.00s ease-in-out;
-          animation: pageTransitionIn 1.00s ease-in-out;
+  -webkit-animation: pageTransitionIn 1s ease-in-out;
+          animation: pageTransitionIn 1s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,7 +542,7 @@ main .a-big-txt {
   margin-bottom: 1rem;
 }
 
-.contact .left-contact #contact-form #fname[type=text] {
+.contact .left-contact #contact-form #fname[type="text"] {
   color: #ff8214;
   font-size: 16px;
   padding: 15px 20px;
@@ -544,7 +552,7 @@ main .a-big-txt {
   width: 240px;
 }
 
-.contact .left-contact #contact-form #email[type=email] {
+.contact .left-contact #contact-form #email[type="email"] {
   color: #ff8214;
   font-size: 16px;
   padding: 15px 20px;
@@ -555,7 +563,7 @@ main .a-big-txt {
   margin-bottom: 1rem;
 }
 
-.contact .left-contact #contact-form #subject[type=text] {
+.contact .left-contact #contact-form #subject[type="text"] {
   color: #ff8214;
   font-size: 16px;
   padding: 15px 20px;
@@ -580,8 +588,8 @@ main .a-big-txt {
   margin-top: 1rem;
   color: #ff8214;
   cursor: pointer;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .contact .left-contact #contact-form .ctc-btn:hover {
@@ -806,15 +814,15 @@ main .a-big-txt {
   .my-work .left-work .m-small-txt ul li a {
     text-decoration: none;
     color: #3c3c3c;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     font-size: 1.5rem;
   }
   .my-work .left-work .m-small-txt ul li a:hover {
     color: #ff8214;
     font-size: 1.7rem;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
   .my-work .right-work {
     -webkit-box-flex: 50%;
@@ -885,7 +893,7 @@ main .a-big-txt {
     width: 330px;
     margin-bottom: 1rem;
   }
-  .contact .left-contact #contact-form #fname[type=text] {
+  .contact .left-contact #contact-form #fname[type="text"] {
     color: #ff8214;
     font-size: 16px;
     padding: 15px 20px;
@@ -894,7 +902,7 @@ main .a-big-txt {
     width: 330px;
     margin-bottom: 1rem;
   }
-  .contact .left-contact #contact-form #email[type=email] {
+  .contact .left-contact #contact-form #email[type="email"] {
     color: #ff8214;
     font-size: 14px;
     padding: 15px 20px;
@@ -903,7 +911,7 @@ main .a-big-txt {
     max-width: 330px;
     margin-bottom: 1rem;
   }
-  .contact .left-contact #contact-form #subject[type=text] {
+  .contact .left-contact #contact-form #subject[type="text"] {
     color: #ff8214;
     font-size: 16px;
     padding: 15px 20px;

@@ -5,17 +5,19 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92598886-4"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-92598886-4');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92598886-4');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>My Work | Ivo | Web Developer | Freelancer</title>
 </head>
 
@@ -126,16 +128,55 @@
             </div>
             <div class="m-small-txt">
                 <ul>
-                <li><a href="https://dennyconstruction.eu" target="_blank" id="dennyconstruction">dennyconstruction.eu</a></li>
-                <li><a href="https://hikov.eu" target="_blank" id="hikov">hikov.eu</a></li>
-                <li><a href="https://vasilmatin.com" target="_blank" id="vasilmatin">vasilmatin.com</a></li>
-                <li><a href="https://motogp-fan-shop.com" target="_blank" id="motogp">motogp-fan-shop.com</a></li>
-                <li><a href="#" target="_blank" id="v2">portfolio v2</a></li>
-                <li><a href="https://v1.ivaylotsochev.com" target="_blank" id="v1">portfolio v1</a></li>
+                    <li><a href="https://airbnb-clone-df51e.web.app/" target="_blank" id="airbnb"><i
+                                class="fab fa-react"></i> REACT Airbnb clone DEMO</a></li>
+                    <li><a href="https://movies.ivaylotsochev.com/" target="_blank" id="movies-app"><i
+                                class="fab fa-react"></i> REACT Movie App</a></li>
+                    <li><a href="https://covid-19-tracker-5c760.web.app/" target="_blank" id="covid-19-tracker"><i
+                                class="fab fa-react"></i> REACT Covid-19 Tracker DEMO</a></li>
+                    <li><a href="http://chat-pat.ivaylotsochev.com/" target="_blank" id="chat-app"><i
+                                class="fab fa-react"></i> REACT Chat App DEMO</a></li>
+                    <li><a href="https://dennyconstruction.eu" target="_blank" id="dennyconstruction"><i
+                                class="fab fa-wordpress-simple"></i> dennyconstruction.eu</a></li>
+                    <li><a href="https://hikov.eu" target="_blank" id="hikov"><i class="fab fa-wordpress-simple"></i>
+                            hikov.eu</a></li>
+                    <li><a href="https://vasilmatin.com" target="_blank" id="vasilmatin"><i
+                                class="fab fa-wordpress-simple"></i> vasilmatin.com</a></li>
+                    <li><a href="https://motogp-fan-shop.com" target="_blank" id="motogp"><i
+                                class="fab fa-wordpress-simple"></i> motogp-fan-shop.com</a></li>
+                    <li><a href="#" target="_blank" id="v2"><i class="fab fa-html5"></i> portfolio v2</a></li>
+                    <li><a href="https://v1.ivaylotsochev.com" target="_blank" id="v1"><i
+                                class="fab fa-wordpress-simple"></i> portfolio v1</a></li>
                 </ul>
             </div>
         </div>
         <div class="right-work">
+            <div class="my-work-airbnb project-info">
+                <h2><a href="https://airbnb-clone-df51e.web.app/" target="_blank">Airbnb clone DEMO</a></h2>
+                <p>Airbnb clone DEMO</p>
+                <p>Created with React and deployed on Firebase hosting. Using useState, React Router hooks</p>
+                <p>GTMetrix Score <span>Fully loaded time ~2.2s</span></p>
+            </div>
+            <div class="my-work-movies-app project-info">
+                <h2><a href="https://movies.ivaylotsochev.com/" target="_blank">Movies App</a></h2>
+                <p>Movies App</p>
+                <p>Created with React and deployed on VPS. It's fetching the data from a API
+                </p>
+                <p>GTMetrix Score <span>Fully loaded time ~0.9s</span></p>
+            </div>
+            <div class="my-work-covid-19-tracker project-info">
+                <h2><a href="https://covid-19-tracker-5c760.web.app/" target="_blank">Covid-19 Tracker</a></h2>
+                <p>Covid-19 Tracker</p>
+                <p>Created with React and deployed on Firebase hosting. It's fetching the data from free API disease.sh
+                </p>
+                <p>GTMetrix Score <span>Fully loaded time ~2.5s | PageSpeed Score - A(92%)</span></p>
+            </div>
+            <div class="my-work-chat-app project-info">
+                <h2><a href="http://chat-pat.ivaylotsochev.com/" target="_blank">Chat App</a></h2>
+                <p>Chat App</p>
+                <p>Created with React + Firebase authentication and Firebase database</p>
+                <p>GTMetrix Score <span>Fully loaded time ~1.0s | PageSpeed Score - A(95%)</span></p>
+            </div>
             <div class="my-work-denny project-info">
                 <h2><a href="https://dennyconstruction.eu" target="_blank">dennyconstruction.eu</a></h2>
                 <p>Business website for construction company</p>
@@ -163,7 +204,9 @@
             <div class="my-work-v2 project-info">
                 <h2><a href="#" target="_blank">portfolio v2</a></h2>
                 <p>My second portfolio website</p>
-                <p>Custom build with <a href="https://themeforest.net/item/canvas-the-multipurpose-html5-template/9228123">Canvas | The Multi-Purpose HTML5 Template</a></p>
+                <p>Custom build with <a
+                        href="https://themeforest.net/item/canvas-the-multipurpose-html5-template/9228123">Canvas | The
+                        Multi-Purpose HTML5 Template</a></p>
                 <p>GTMetrix Score <span>Fully loaded time ~2.1s | PageSpeed Score - B(86%)</span></p>
             </div>
             <div class="my-work-v1 project-info">
@@ -187,7 +230,7 @@
     </div>
 
     <script src="/js/script.js"></script>
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 
 </body>
 

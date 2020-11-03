@@ -6,15 +6,18 @@ if (isset($_POST['submit'])) {
     $subject = $_POST['subject'];
     $message = $_POST['textarea'];
 
-    $mailTo = "email address where the emails will be received";
+    $mailTo = "admin@ivaylotsochev.com";
     $headers = "From: ".$mailFrom;
     $txt = "You have received an email from ".$name.".\n\n".$message;
 
 
     mail($mailTo, $subject, $txt, $headers);
 
-    header("Location: index.php?mailsend");
+    header("Location: contact.html?mailsend");
+    echo "Thank You!";
 }
 
-// emails TO gmail won't work, the email needs to be send to another mailbox and then forwarded to gmail
+?>
+
+<!-- // emails TO gmail won't work, the email needs to be send to another mailbox and then forwarded to gmail -->
 
