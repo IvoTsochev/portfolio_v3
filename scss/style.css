@@ -366,13 +366,13 @@ main .a-big-txt {
 
 @-webkit-keyframes react {
   to {
-    width: 5%;
+    width: 20%;
   }
 }
 
 @keyframes react {
   to {
-    width: 5%;
+    width: 20%;
   }
 }
 
